@@ -26,8 +26,7 @@ const GallerySection = () => {
               <div 
                 className="h-64 bg-gray-300 bg-cover bg-center"
                 style={{ 
-                  backgroundImage: `url(${img})`, 
-                  backgroundImage: 'url(/placeholder.svg)' // Fallback to placeholder if images don't exist
+                  backgroundImage: `url(${img})` || 'url(/placeholder.svg)' // Using fallback with logical OR operator
                 }}
               ></div>
             </div>
