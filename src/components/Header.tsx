@@ -23,8 +23,8 @@ const Header = () => {
           
           <div className="flex items-center gap-2 text-sunvalley-gray">
             <Mail size={18} />
-            <a href="mailto:info@bramhacorpsunvalley.com" className="hover:text-sunvalley-gold transition-colors">
-              info@bramhacorpsunvalley.com
+            <a href="mailto:Rohitmani@bramhacorppune.in" className="hover:text-sunvalley-gold transition-colors">
+              Rohitmani@bramhacorppune.in
             </a>
           </div>
           
