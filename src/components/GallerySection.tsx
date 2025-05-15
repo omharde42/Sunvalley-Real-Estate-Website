@@ -26,7 +26,7 @@ const GallerySection = () => {
               <div 
                 className="h-64 bg-gray-300 bg-cover bg-center"
                 style={{ 
-                  backgroundImage: `url(${img})` || 'url(/placeholder.svg)' // Using fallback with logical OR operator
+                  backgroundImage: `url(${img}), url(/placeholder.svg)` // Using CSS fallback mechanism
                 }}
               ></div>
             </div>
