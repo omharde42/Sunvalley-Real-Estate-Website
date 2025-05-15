@@ -26,11 +26,10 @@ const GallerySection = () => {
         <div className="mb-10 overflow-hidden rounded-lg shadow-xl">
           <div className="relative">
             <AspectRatio ratio={16/9}>
-              <div 
-                className="w-full h-full bg-cover bg-center"
-                style={{ 
-                  backgroundImage: `url(/hero-bg.jpg), url(/placeholder.svg)` 
-                }}
+              <img 
+                src="/lovable-uploads/a41b4ad9-5bfc-46c7-8b22-73121609eea9.png" 
+                alt="Bramhacorp mountain view"
+                className="w-full h-full object-cover"
               />
             </AspectRatio>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
