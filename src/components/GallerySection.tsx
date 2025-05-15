@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
 
 const GallerySection = () => {
   // Placeholder for gallery images (in a real implementation, these would be actual image paths)
@@ -20,6 +22,26 @@ const GallerySection = () => {
           <span className="text-sunvalley-gold">Gallery</span>
         </h2>
         
+        {/* Featured Gallery Poster */}
+        <div className="mb-10 overflow-hidden rounded-lg shadow-xl">
+          <div className="relative">
+            <AspectRatio ratio={16/9}>
+              <div 
+                className="w-full h-full bg-cover bg-center"
+                style={{ 
+                  backgroundImage: `url(/hero-bg.jpg), url(/placeholder.svg)` 
+                }}
+              />
+            </AspectRatio>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+              <Badge className="mb-2 self-start bg-sunvalley-gold hover:bg-sunvalley-gold/90">Featured</Badge>
+              <h3 className="text-white text-2xl md:text-3xl font-bold">Bramhacorp Sunvalley</h3>
+              <p className="text-white/90 mt-1">Luxury Residences in Prime Location</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((img, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
