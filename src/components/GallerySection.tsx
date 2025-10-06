@@ -4,14 +4,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Badge } from '@/components/ui/badge';
 
 const GallerySection = () => {
-  // Placeholder for gallery images (in a real implementation, these would be actual image paths)
   const galleryImages = [
-    "/gallery-1.jpg",
-    "/gallery-2.jpg",
-    "/gallery-3.jpg",
-    "/gallery-4.jpg",
-    "/gallery-5.jpg",
-    "/gallery-6.jpg",
     "/gallery-7.jpg",
     "/gallery-8.jpg",
     "/gallery-9.jpg",
